@@ -75,6 +75,7 @@ namespace middle {
 		while (gameState->undoQueue.size() > 0) {
 			gameState->undoQueue.pop();
 		}
+		// ???
 		if (gameState->bubbleAlgebraState.bubbleActions.size() > 0) {
 			gameState->bubbleAlgebraState.bubbleActions.clear();
 		}

@@ -301,6 +301,7 @@ extern "C" {
 
 		if (inputState.closeGame) {
 			closeGame(gameState.get());
+			gameState.reset();
 			return;
 		}
 
@@ -354,6 +355,7 @@ extern "C" {
 void closeGame(middle::GameState* gameState)
 {
 	saveEditorState(gameState);
+	resetScene(gameState);
 }
 
 
